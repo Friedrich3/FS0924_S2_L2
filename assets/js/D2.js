@@ -149,6 +149,13 @@ if (typeof varFornita == "number"){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("ESERCIZIO 9");
+let varEs9 = 8;
+let restoEs9 = varEs9%2;
+if(restoEs9 === 0){
+  console.log("Il numero: " + varEs9 +" è pari.");
+}else{
+  console.log("Il numero: " + varEs9 +" è dispari.");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -163,6 +170,15 @@ console.log("ESERCIZIO 9");
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 10");
+let val = 7
+if (val < 5) {
+    console.log("Meno di 5");
+  } else if (val < 10) {
+    console.log("Meno di 10");
+  } else {
+    console.log("Uguale a 10 o maggiore");
+  }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -175,27 +191,58 @@ const me = {
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 11");
+me.city = "Toronto";
+console.log(me);
+
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 12");
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 13");
+delete me.skills[2];
+console.log(me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 14");
+const arrayVuoto ={
+
+}
+console.log(arrayVuoto);
+arrayVuoto[0] = 1;
+arrayVuoto[1] = 2;
+arrayVuoto[2] = 3;
+arrayVuoto[3] = 4;
+arrayVuoto[4] = 5;
+arrayVuoto[5] = 6;
+arrayVuoto[6] = 7;
+arrayVuoto[7] = 8;
+arrayVuoto[8] = 9;
+arrayVuoto[9] = 10;
+console.log(arrayVuoto);
+
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 15");
+console.log(arrayVuoto);
+arrayVuoto[9] = 100;
+console.log(arrayVuoto);
